@@ -1,0 +1,35 @@
+/* This centers the heading text */
+h1 {
+    text-align: center;
+}
+/* This spaces out the heading 2 text */
+h2 {
+    margin-left: 5px;
+}
+/* Puts the breadcrumb on the right and spaces it out by 20px from the right and 15px from the top */
+nav {
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+/* This spaces out the divs for better looks */
+div {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/* This spaces out the paragraph tag also for better looks */
+p {
+    margin-left: 5px;
+}
+/* Changes the p tag's color to orangered, changes the background color to light blue, and changes the button color to indigo when the browser width is 600px or less */
+@media screen and (max-width: 600px) {
+    p {
+        color: orangered !important;
+    }
+    body {
+        background: lightblue !important;
+    }
+    .btn {
+        color: indigo !important;
+    }
+}

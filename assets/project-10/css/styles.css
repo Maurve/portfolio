@@ -1,0 +1,80 @@
+/* This makes the background color beige. */
+body {
+    background-color: beige;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* This centers the page title */
+h1 {
+    text-align: center;
+    transition: 0.3s;
+}
+/* This changes the page title's color to red */
+h1:hover {
+    color: red;
+}
+/* This gives the navigation bar a black background */
+nav {
+    background-color: #333;
+    margin: -8px;
+}
+/* This thickens the horizontal rules */
+hr {
+    border-top: 3px solid black;
+    transition: 0.3s;
+}
+/* This changes the horizontal rules' colors to red */
+hr:hover {
+    border-top: 3px solid red;
+}
+p {
+    color: black;
+    transition: 0.3s;
+}
+/* Hovering over the paragraph changes the text color to red */
+p:hover {
+    color: red;
+}
+/* This gives buttons a better style */
+.button {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.7;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+/* Hovering over buttons gives these effects */
+.button:hover {
+    opacity: 1;
+    border: 1px solid #ffffff;
+    padding: 18px 20px;
+}
+/* This makes the current page button have a green button at all times */
+.active {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #04AA6D;
+    border: 1px solid #04AA6D;
+    transition: 0.3s;
+}
+/* Hovering over the active button increases the padding */
+.active:hover {
+    padding: 18px 20px;
+}
+/* This changes the background color to lavender, changes the navigation buttons to be vertical, and changes the horizontal rule's color to blue when the page width is 600px or less */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lavender;
+    }
+    img {
+        display: block;
+    }
+    hr {
+        border-top: 3px solid blue;
+    }
+}

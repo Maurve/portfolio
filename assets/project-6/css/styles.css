@@ -1,0 +1,140 @@
+/* This makes the background color beige. */
+body {
+    background-color: beige;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* This centers the page title */
+h1 {
+    text-align: center;
+    transition: 0.3s;
+}
+/* This changes the page title's color to red */
+h1:hover {
+    color: red;
+}
+/* This gives the navigation bar a black background */
+nav {
+    background-color: #333;
+    margin: -8px;
+}
+/* This thickens the horizontal rules */
+hr {
+    border-top: 3px solid black;
+    transition: 0.3s;
+}
+/* This changes the horizontal rules' colors to red */
+hr:hover {
+    border-top: 3px solid red;
+}
+p {
+    color: black;
+    transition: 0.3s;
+}
+/* Hovering over the paragraph changes the text color to red */
+p:hover {
+    color: red;
+}
+/* This will create the grids */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main';
+    gap: 10px;
+    padding: 10px;
+}
+/* This will design the grids */
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+/* This will create the flexboxes */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+/* This will design the flexboxes */
+.flex-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+/* Grid header */
+.name {
+    grid-area: header;
+    font-size: 30px;
+}
+/* Grid menu */
+.accomplishments {
+    grid-area: menu;
+}
+/* Main grid content */
+.info {
+    grid-area: main;
+    font-size: 15px;
+}
+/* This gives buttons a better style */
+.button {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.7;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+/* Hovering over buttons gives these effects */
+.button:hover {
+    opacity: 1;
+    border: 1px solid #ffffff;
+}
+/* This makes the current page button have a green button at all times */
+.active {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #04AA6D;
+    border: 1px solid #04AA6D;
+}
+/* This centers the grid title */
+.name {
+    text-align: center;
+    transition: 0.3s;
+}
+/* This changes the grid title's text color to red */
+.name:hover {
+    color: red;
+}
+.info {
+    color: black;
+    transition: 0.3s;
+}
+/* Hovering over the info changes the text color to red */
+.info:hover {
+    color: red;
+}
+/* This changes the background color to lavender, changes the active page button to be blue, changes the horizontal rule's color to blue, and sets the flexboxes to display in a block when the page width is 600px or less */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lavender;
+    }
+    .flex-container {
+        display: block;
+    }
+    hr {
+        border-top: 3px solid blue;
+    }
+    .active {
+        background-color: blue;
+        border: 1px solid blue;
+    }
+}

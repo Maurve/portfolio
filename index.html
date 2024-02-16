@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Alex Neher</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Alex Neher</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" id="profilePicture" alt="Alex Neher profile picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Alex Neher</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/alexander-neher-5b6a69248/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Maurve'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>0 years</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Associate's Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My journey of development began in 2022. I was interested in doing this because of all the jobs I can get with this field, and I have taken programming classes in
+              high school. I am set to graduate from the Harrisburg Area Community College, where I have not had a course grade below A. I listed 0 years of experience because I have
+              never had a job in the WEB department, but hopefully my first job will be with you. I am more of a backend developer than I am a frontend developer, but if you need
+              a frontend or full-stack developer, I know you can rely on me to get the job done for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UX</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>jQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Home Team</h2>
+            <p class="section__text__p1">
+              I chose this project as my main one. This is for my capstone course (WEB 268) where I made a full stack application.
+              You add items to a cart, enter your email, and submit the order to a database that I can access. It uses Bootstrap, jQuery, and SQL.
+              This is the project I am most proud of.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Maurve/the-home-team'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://the-home-team.000webhostapp.com/pages/index.php'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Style Guide</h2>
+            <p class="section__text__p1">
+              This is a style guide I made for WEB 133. I think I did a good job with all the colors and components that I designed in Illustrator. I know I said my main focus
+              was being a backend developer, but I'd like to show some design projects as well.
+            </p><br>
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-2.png'"
+              >
+                View Image
+              </button>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Waters</h2>
+            <p class="section__text__p1">
+              The is an Adobe XD prototype I created for WEB 133. You will need Adobe XD to use this, so I just provided a video demo of how it works.
+              I did provide a link to download it if you do have Adobe XD though.
+              I picked this because I liked how I designed the pages. There is no programming in this. This just shows you my design skills.
+              None of the text in this is prototype is true.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-3.xd'"
+              download>
+                Download
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-3.mp4'"
+              >
+                Video Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4/output.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 4 (WEB 240)</h2>
+            <p class="section__text__p1">
+              In this project, the console will show the date one year from today, order entered names in alphabetical order, and show a greeting with my name.
+              I enjoyed this project because I was able to order things in alphabetical order. Press "Ok" in the alert box to stop it from asking you to input names.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-4/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5/output.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 11 (WEB 127)</h2>
+            <p class="section__text__p1">
+              In this project, I used a Bootstrap template I found online that was a part of the assignment. There isn't much to this one, I just liked the fact that I was able to
+              use a Bootstrap template and tables, as well as a dropdown. I was a beginner with Bootstrap at the time, and I was a little proud of myself for getting this to work.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-5/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6/output.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 7 (WEB 127)</h2>
+            <p class="section__text__p1">
+              In this project, I used grids in CSS. I changed the colors for each NFC West team in this assignment, and I like the way they look.
+              There are also three images in each page. There is an area that shows you Super Bowl championships, NFC championships, and NFC West titles.
+              I like the way I made them readable by putting them in new lines as well as making the important things bold.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-6/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-7/output.png"
+                alt="Project 7"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 10 (WEB 127)</h2>
+            <p class="section__text__p1">
+              There isn't that many impressive things in this project. The thing I'm most proud of myself for is adding the Office application icons to the navigation bar at the top.
+              I also used Bootstrap in this assignment which is how I was able to do that in the first place.
+              I liked that I used a button group for the navigation bar which makes it look better than a standard navigation bar.
+              There are also breadcrumbs in each page of the assignment which I liked.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-7/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-8/output.png"
+                alt="Project 8"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 9 (WEB 125)</h2>
+            <p class="section__text__p1">
+              This was the very first assignment where I used Bootstrap which is why I put it here.
+              I used tables to show the standings for the 2022 MLB season, and I discussed some history of the four divisions I chose.
+              Each table column shows a standing, logo, record, and postseason result from 2022. This was made on October 24, 2022, so the World Series hadn't been started yet.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-8/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-9.png"
+                alt="Project 9"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 12 (WEB 110)</h2>
+            <p class="section__text__p1">
+              In this assignment, I was told to create a unit like my HACC professor Eric Yoxheimer organizes his units.
+              I created an introduction page, basic HTML structure page, other HTML elements page, a final points page, as well as an assignment page.
+              I put this here because I like the minimalistic design I used for WordPress. I grabbed this theme off of the WordPress catalog, and using code tags is easy with this.
+              I did also enjoy being able to make my own unit and assignment instructions. Click the top left of the page to view other pages.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://aeneher.wordpress.com/assignment-12/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-10/output.png"
+                alt="Project 10"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assignment 6 (WEB 127)</h2>
+            <p class="section__text__p1">
+              In this assignment, I used transitions all over my assignment. If you go around hovering things on each page, you may notice something change.
+              I put this here because I really liked being able to put in silly transitions into my assignments to make them more fun.
+              This also shows I am able to use transitions. I have worked with them in my WEB 125 course in 2022, but this one is more recent.
+            </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/project-10/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
